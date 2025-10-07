@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Synapse</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="apiKeySection">
+    <h2>🔐 Enter Gemini API Key</h2>
+    <input type="password" id="apiKeyInput" placeholder="Enter your Gemini API key">
+    <button id="saveKeyBtn">Save Key</button>
+  </div>
+
+  <div id="mainSection" style="display:none;">
+    <h2>⚡ Synapse</h2>
+    <button id="summarizeBtn">Summarize Page</button>
+    <div id="summary" class="output-box"></div>
+
+    <hr>
+    <h3>💬 Chat</h3>
+    <div id="chatOutput" class="chat-box"></div>
+    <input type="text" id="userInput" placeholder="Ask something...">
+    <button id="sendBtn">Send</button>
+  </div>
+
+  <script src="sidepanel.js"></script>
+</body>
+</html>
